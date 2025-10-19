@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="layout">
+
+    <aside class="sidebar" aria-label="barra-lateral">
+        <div class="avatar-sm" id="sidebarAvatar">
+            <span class="initials" id="sidebarInitials">AG</span>
+        </div>
+
+        <div class="brand-meta">
+            <div class="muted">Desarrolladora de Software</div>
+        </div>
+        
+
+        <nav class="main-nav" aria-label="Navegación Principal">
+            <ul>
+                <li><a href="#" class="nav-item">Inicio</a></li>
+                <li><a href="#" class="nav-item">Mi Perfil</a></li>
+                <li><a href="#" class="nav-item">Mis trabajos</a></li>
+                <li><a href="#" class="nav-item">Candidaturas</a></li>
+                <li><a href="#" class="nav-item">Configuracion</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-card" id="mainCard" role="main">
+        <header class="profile-header">
+            <div class="avatar-lg" id="bigAvatar" role="img" aria-label="Foto de Perfil">
+                <span class="initials" id="bigInitials">AG</span>
+            </div>
+
+            <div class="user-meta">
+                <h1 class="page-title">Mi perfil</h1>
+                <p class="user-name">Ana G.</p>
+                <p class="user-sub">Desarrolladora de software | Ubicación: Madrid, España</p>
+            </div>
+        </header>
+
+            <!-- FORMULARIO DE DATOS-->
+
+        <section class="profile-section" aria-labelledby="personalInfoTitle">
+            <h2 id="personalInfoTitle">Informacion Personal</h2>
+
+            <form id="profileForm" autocomplete="off" novalidate>
+                <div class="row two-columns">
+                    <div class="field">
+                        <label for="firstName">Nombre</label>
+                        <input id="firstName" name="firstName" type="text">
+                    </div>
+
+                    <div class="field">
+                        <label for="lastName">Apellido</label>
+                        <input id="lastName" name="lastName" type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field full">
+                        <label for="email">Correo electrónico</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field full">
+                        <label for="location">Ubicación</label>
+                        <input id="location" name="location" type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field full">
+                        <label for="phone">Teléfono</label>
+                        <input id="phone" type="tel" pattern="^[0-9-+\s()]*$" maxLength="16" minLength="6">
+                    </div>
+                </div>
+
+                <!-- Curriculum -->
+
+                <div class="row">
+                    <h3>Currículum</h3>
+                    <div class="field upload-row">
+                        <label for="cvFile" class="btn-upload">Subir currículum</label>
+                        <input id="cvFile" name="cvFile" type="file" accept=".pdf, .doc, .docx">
+                    </div>
+                </div>
+
+                <!--Foto de perfil-->
+
+                <div class="row">
+                    <h3>Foto de Perfil</h3>
+                    <div class="field upload-row">
+                        <label for="avatarFile" class="btn-upload small">Cambiar foto</label>
+                        <input id="avatarFile" name="avatarFile" type="file" accept="image/*">
+                        <span class="muted">PNG/JPG, recomendado 400x400</span>
+                    </div>
+                </div>
+
+                <!-- Botones de accion -->
+                 <div class="row actions">
+                    <button type="submit" class="btn primary">Guardar</button>
+                    <button type="button" class="btn secondary">Cancelar</button>
+                 </div>
+            </form>
+        </section>
+    </main>
+    </div>
+</body>
+</html>

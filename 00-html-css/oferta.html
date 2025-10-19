@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de la oferta de empleo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <div class="logo-container">
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path fill-rule="evenodd" d="M4 5.78571C4 4.80909 4.78639 4 5.77778 4H18.2222C19.2136 4 20 4.80909 20 5.78571V15H4V5.78571ZM12 12c0-.5523.4477-1 1-1h2c.5523 0 1 .4477 1 1s-.4477 1-1 1h-2c-.5523 0-1-.4477-1-1ZM8.27586 6.31035c.38089-.39993 1.01387-.41537 1.4138-.03449l2.62504 2.5c.1981.18875.3103.45047.3103.72414 0 .27368-.1122.5354-.3103.7241l-2.62504 2.5c-.39993.3809-1.03291.3655-1.4138-.0344-.38088-.4-.36544-1.033.03449-1.4138L10.175 9.5 8.31035 7.72414c-.39993-.38089-.41537-1.01386-.03449-1.41379Z" clip-rule="evenodd"/>
+  <path d="M2 17v1c0 1.1046.89543 2 2 2h16c1.1046 0 2-.8954 2-2v-1H2Z"/>
+</svg>
+    <h1 class="logo">TechJobs</h1>
+    </div>
+    <nav>
+        <a href="">Inicio</a>
+        <a href="">Empleos</a>
+        <a href="">Empresas</a>
+        <a href="">Salarios</a>
+    </nav>
+    <div>
+        <form role="find-job">
+            <div>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+</svg> 
+            <input required type="text" placeholder="Buscar por cargo, habilidad o empresa">
+            </div>
+        </form>
+    </div>
+    </header>
+    
+    <main class="job-detail-page">
+        <nav aria-label="Ruta de navegación" class="breadcrumb">
+            <a href="#">Inicio</a> ›
+            <a href="#">Empleos</a> ›
+            <a href="#">Desarrollador de Software</a> ›
+            <span>Desarrollador Full Stack</span>
+        </nav>
+
+        <!-- Contenido principal del puesto de trabajo -->
+        <article class="job-posting">
+            <header class="job-header">
+                <h1>Desarrollador Full Stack</h1>
+                <p class="job-meta">
+                    <strong>Acme Innovations | Remoto | Tiempo completo</strong>
+                </p>
+                <button class="apply-btn">Aplicar ahora</button>
+            </header>
+
+            <section class="job-description">
+                <h2>Descipción del empleo</h2>
+                <p>Buscamos un desarrollador Full Stack talentoso y motivado para unirse a nuestro equipo. El candidato ideal tendrá experiencia en el desarrollo de aplicaciones Web
+                    utilizando diversas tecnologías front-end y back-end. Será responsable de todo el ciclo de vida del desarrollo,desde la concepción y el diseño hasta las pruebas y el despliegue.
+                </p>
+            </section>
+
+            <section class="job-responsabilities">
+                <h2>Responsabilidades</h2>
+                <ul>
+                    <li>Desarrollar y mantener aplicaciones web utilizando React, Angular o Vue.js.</li>
+                    <li>Diseñar e implementar APIs RESTful utilizando frameworks back-end como Node.js, Python (Django/Flask) o Java (Spring Boot).</li>
+                    <li>Colaborar con otros desarrolladores, diseñadores y gestores de producto para definir y entregar nuevas funcionalidades.</li>
+                    <li>Escribir código limpio, eficiente y bien documentado, siguiendo las mejores prácticas de la industria.</li>
+                </ul>
+            </section>
+
+            <section class="job-requirements">
+                <h2>Requisitos</h2>
+                <ul>
+                    <li>Licenciatura en informática o campo relacionado</li>
+                    <li>Mínimo de 3 años de experiencia en desarrollo FullStack</li>
+                    <li>Dominio de al menos un framework front-end (React, Angular, Vue.js) y un framework back-end (Node.js, Python, Java).</li>
+                    <li>Experiencia con bases de datos relacionales y no relacionales (SQL, MongoDB).</li>
+                    <li>Familiaridad con herramientas de control de versiones (Git) y metodologías ágiles.</li>
+                </ul>
+            </section>
+            
+            <section class="about-company">
+                <h2>Sobre la empresa</h2>
+                <p>
+                    Acne Innovations es una empresa líder en tecnología que se centra en la creación de soluciones innovadoras para diversas industrias.
+                    Ofrecemos un entorno de trabajo dinámico y colaborativo, con oportunidades de crecimiento profesional y desarrollo personal. Valoramos la creatividad,
+                    la innovación y elcompromiso con la excelencia.
+                </p>
+            </section>
+
+            <footer class="job-footer">
+                <button class="apply-btn">Aplicar Ahora</button>
+            </footer>
+        </article>
+    </main>
+
+</body>
+</html>

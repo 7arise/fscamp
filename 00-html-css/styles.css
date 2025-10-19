@@ -1,3 +1,6 @@
+
+###
+
 *{
     margin: 0;
     padding: 0;
@@ -247,14 +250,6 @@ footer{
     padding: 40px 0;
     flex-wrap: wrap;
     text-align: center;
-}
-
-footer artice{
-    width: 320px;
-    background-color: #fff;
-    border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
 }
 
 footer article:hover{
